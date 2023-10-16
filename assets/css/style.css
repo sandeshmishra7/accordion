@@ -1,0 +1,433 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@charset "utf-8";
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+
+input[type='radio'] {
+  vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup {
+  top: -.7em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+/* 1.2. Clear Fix
+   ========================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/*for all*/
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1360px;
+  width: 86%;
+  margin: 0 auto;
+}
+
+.para { line-height: 25px; }
+
+.transition-ease {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+/*=================================
+  Header styling starts here
+=================================*/
+h1 a { text-indent: -9999px; }
+
+h1 img { float: left; }
+
+header {
+  width: 100%;
+  padding-top: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: transparent;
+  color: white;
+}
+
+/*=================================
+  Header styling ends here
+=================================*/
+
+/*=================================
+  main styling starts here
+=================================*/
+/* banner start */
+
+.banner {
+  height: 100%;
+  position: relative;
+  background: url('https://dummyimage.com/1920x1280/808080/fff')no-repeat center center/cover;
+}
+
+.banner .wrapper {
+  padding: 350px 0 60px;
+  text-align: center;
+}
+
+.video-link a { text-indent: -9999px; }
+
+.video-link a::before {
+  content: "\f04b";
+  font-family: "fontAwesome";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-indent: 0;
+  color: #fff;
+  font-size: 120px;
+  float: right;
+  cursor: pointer;
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  margin: 100px 0 32px 0;
+  color: #fff;
+  font-size: 36px;
+}
+
+.download-btn a {
+  padding: 15px 35px;
+  border-radius: 3px;
+  font-size: 18px;
+  background-color: #ffa909;
+  color: #fff;
+}
+
+/* banner end */
+
+/* features start */
+
+.features { margin: 80px 60px; }
+
+.features-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.features-list li {
+  -ms-flex-preferred-size: 22%;
+  flex-basis: 22%;
+  text-align: center;
+}
+
+.features-list li img {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-bottom: 20px;
+  font-size: 23px;
+}
+
+span { color: #ffa500; }
+
+/* features end */
+
+/* accordion start */
+
+.accordion-section { min-height: 100%; }
+
+.accordion {
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  text-align: left;
+}
+
+.accordion h4 { font-size: 20px; }
+
+.panel {
+  padding: 0 18px;
+  margin-bottom: 30px;
+  display: none;
+  background-color: #fff;
+  overflow: hidden;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.dropdown { display: block; }
+
+.show,
+.hide {
+  display: none;
+  color: #000;
+  font-size: 55px;
+}
+
+.show { display: block; }
+
+/* accordion end */
+
+/*=================================
+  main styling ends here
+=================================*/
+
+/*=================================
+  footer styling starts here
+=================================*/
+
+
+
+
+
+
+
+/*=================================
+  footer styling ends here
+=================================*/
+
+/*media query starts*/
+/*media query for 995px starts here*/
+
+@media only screen and (min-width: 995px) {
+  .download-btn a:hover {
+    background-color: #fff;
+    color: #ffa909;
+  }
+
+  .video-link a:hover::before { color: #000; }
+}
+
+@media only screen and (max-width: 995px) {
+  .features-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .features-list li { margin-bottom: 30px; }
+
+  .accordion {
+    width: 93%;
+    padding: 10px;
+  }
+
+  .accordion h4 {
+    max-width: 50%;
+    font-size: 12px;
+  }
+
+  .show,
+  .hide { font-size: 20px; }
+}
